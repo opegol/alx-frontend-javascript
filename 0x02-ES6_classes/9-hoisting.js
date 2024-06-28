@@ -34,8 +34,8 @@ export class StudentHolberton {
   }
 
   get fullStudentDescription() {
-    /* const self = this; */
-    return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
+    const self = this;
+    return `${self._firstName} ${self._lastName} - ${self._holbertonClass._year} - ${self._holbertonClass._location}`;
   }
 }
 
