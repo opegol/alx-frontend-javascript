@@ -2,9 +2,9 @@ export default function cleanSet(set, startString) {
   const restArr = [];
   if (
     startString.length === 0
+    || !(set instanceof Set)
     || set.size === 0
-    //|| typeof set !== 'object'
-    //|| typeof startString !== 'string'
+    // || typeof startString !== 'string'
   ) {
     return '';
   }
